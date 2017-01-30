@@ -1,3 +1,3 @@
 # Gannak-Jantra
-Basic Calculator in C
-## KOSS TASK
+## Basic Calculator in C
+### KOSS TASK
