@@ -5,5 +5,5 @@
 This program is a basic calculator in C. It has many functionalities of a calculator;
 including trignometric and logarithmic functions. The program has a menu driven operation's table.
 
-###### Also, the best part of the program is that it remembers the previously evaluated result which can 
-###### be used for further calculation. 
+#### Also, the best part of the program is that it remembers the previously evaluated result which can 
+#### be used for further calculation. 
