@@ -1,0 +1,84 @@
+<HTML>
+<meta http-equiv="x-ua-compatible" content="IE=8">
+<HEAD>
+<SCRIPT LANGUAGE="VBScript">
+	Sub GiveFocus()
+		Document.Project.txtFirstNumber.Focus()
+	End Sub	
+	Function Addition()
+		Dim FirstNumber, SecondNumber, ReqdResult
+		FirstNumber = cdbl(Document.Project.txtFirstNumber.Value)
+		SecondNumber = cdbl(Document.Project.txtSecondNumber.Value)
+		ReqdResult = FirstNumber + SecondNumber
+		Document.Project.txtResult.Value = ReqdResult
+	End Function
+	
+	Function Difference()
+		Dim FirstNumber, SecondNumber, ReqdResult
+		FirstNumber = cdbl(Document.Project.txtFirstNumber.Value)
+		SecondNumber = cdbl(Document.Project.txtSecondNumber.Value)
+			If FirstNumber>SecondNumber Then		
+				ReqdResult = FirstNumber - SecondNumber
+			Else
+				ReqdResult = SecondNumber - FirstNumber
+			End If	
+		Document.Project.txtResult.Value = ReqdResult
+	End Function
+
+	Function Product()
+		Dim FirstNumber, SecondNumber, ReqdResult
+		FirstNumber = cdbl(Document.Project.txtFirstNumber.Value)
+		SecondNumber = cdbl(Document.Project.txtSecondNumber.Value)
+		ReqdResult = FirstNumber*SecondNumber
+		Document.Project.txtResult.Value = ReqdResult
+	End Function
+
+	Function Quotient()
+		Dim FirstNumber, SecondNumber, ReqdResult
+		FirstNumber = cdbl(Document.Project.txtFirstNumber.Value)
+		SecondNumber = cdbl(Document.Project.txtSecondNumber.Value)
+		If SecondNumber=0 Then
+			If FirstNumber=0 Then
+				ReqdResult = "Infinity"
+			Else 
+				ReqdResult="Not Defined"
+			End If
+		Else 
+			ReqdResult = FirstNumber/SecondNumber
+		End If
+		Document.Project.txtResult.Value = ReqdResult
+	End Function
+</SCRIPT>			
+<TITLE> Mathematical Operations </TITLE>
+</HEAD>
+<BODY OnLoad="GiveFocus()">
+<H1 align="center"><U><I>My First Calculator</I></U></H1>
+<FORM NAME="Project" METHOD="POST">
+<TABLE Border style="margin: 12em 30em 15em 30em; border-width: 15px; border-color: red; border-style: double">
+<TR>
+	<TD COLSPAN=2> First Number: </TD>
+	<TD COLSPAN=2><CENTER><INPUT TYPE="text" NAME="txtFirstNumber"></CENTER></TD>
+</TR>
+<TR>
+	<TD COLSPAN=2> Second Number: </TD>
+	<TD COLSPAN=2><CENTER><INPUT TYPE="text" NAME="txtSecondNumber"></CENTER></TD>
+</TR>
+<TR>
+	<TD COLSPAN=2> Reqd. Result: </TD>
+	<TD COLSPAN=2><CENTER><INPUT TYPE="text" NAME="txtResult"></CENTER></TD>
+</TR>
+<TR>
+	<TD><INPUT TYPE="button" NAME="Sum" Value="SUM" OnClick="Addition()"></TD>
+	<TD><INPUT TYPE="button" NAME="Diff." Value="DIFFERENCE" OnClick="Difference()"></TD>
+	<TD><INPUT TYPE="button" NAME="Prod." Value="PRODUCT" OnClick="Product()"></TD>
+	<TD><INPUT TYPE="button" NAME="Quo." Value="QUOTIENT" OnClick="Quotient()"></TD>
+</TR>
+<TR>
+	<TD></TD>
+	<TD COLSPAN=2><CENTER><INPUT TYPE="reset" NAME="Reset" Value="RESET ALL VALUES" OnClick="GiveFocus()"></CENTER></TD>
+	<TD></TD>
+</TR>
+</TABLE>
+</FORM>
+</BODY>
+</HTML>

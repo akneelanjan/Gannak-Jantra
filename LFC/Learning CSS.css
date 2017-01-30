@@ -1,0 +1,8 @@
+P { text-align: center }
+FONT1 { font-family: Algerian; font-size: 100px; color: yellow }	
+FONT2 { font-family: Algerian; font-size: 100px; color: white }
+FONT3 { FONT-Family: Snap ITC; font-variant: small-caps; font-weight: 800; color:black ; font-size: 200px}
+.border { border-width: 15px; border-color: yellow; border-style: double }
+A:link { color: white; font-size: 50px; font-family: Calibri; font-weight: 600 }
+A:active { color: yellow; font-size: 50px; font-family: Calibri; font-weight: 600  }
+A:visited { color: white; font-size: 50px; font-family: Calibri; font-weight: 600  }
