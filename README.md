@@ -10,4 +10,4 @@ including trignometric and logarithmic functions. The program has a menu driven 
 
 I have also uploaded the screenshots of a typical run of the program.
 
-##### Also, I have uploaded my previous projects of a Web Calculator and my-made website of my favourite club Liverpool in VBScript.
+##### Also, I have uploaded my previous projects of a Web Calculator in VBScript and my-made website of my favourite club Liverpool in HTML/CSS.
