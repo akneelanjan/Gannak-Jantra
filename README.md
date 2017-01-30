@@ -1,4 +1,4 @@
-# Gannak-Jantra
+# La Calculette
 ## Basic Calculator in C
 ### KOSS TASK
 
